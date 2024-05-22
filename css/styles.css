@@ -1,5 +1,5 @@
 :root{
-    --blanco:#000000;
+    --blanco:#ffffff;
     --negro:#212121;
     --primario:#FFC107;
     --secundario:#0097A7;
@@ -39,7 +39,32 @@ body {
    
     /* 1 rem = 10px*/
 }
+#cab{
+    background-image: url(../img/cabecera2.jpg);
+    padding: 2rem;
+}
 
 span {
     font-size: 2rem;
+}
+.contenedor{
+    width: 120rem;
+}
+.nav-bg{
+    background-color: var(--secundario);
+    
+}
+.nave-principal{
+    
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+.nave-principal a {
+   color: var(--blanco);
+   text-decoration: none;
 }
