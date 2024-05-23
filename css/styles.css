@@ -20,6 +20,10 @@
 */
 html {
     font-size: 62.5%; 
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
 }
 body {
     font-size: 16px;
@@ -27,11 +31,21 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-.titulo {
+
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+h1,h2,h3 {
     
     text-align: center;
-    font-size: 3.8rem;
-    color: var(--negro);
+   
+    color: var(--blanco);
 
 
     /*font-family: Georgia, 'Times New Roman', Times, serif;
@@ -39,16 +53,32 @@ body {
    
     /* 1 rem = 10px*/
 }
+.contenido-hero p{
+    font-size: 2.8rem;
+}
+.tituloPrin{
+    text-align: center;
+    font-size: 3.8rem;
+    color: var(--negro);
+}
 #cab{
     background-image: url(../img/cabecera2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 120px;
 }
 
 span {
     font-size: 2rem;
 }
-.contenedor{
-    width: 120rem;
+.contenedor{ 
+    max-width: 120rem; /* toma como maximo los 120
+     rem si es que tiene, sino toma por defecto el espacio que tenga */
+    
+     margin: 0 auto;
 }
 .nav-bg{
     background-color: var(--secundario);
@@ -60,11 +90,62 @@ span {
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
-
-    display: flex;
-    justify-content: space-between;
+   
+   display: flex;
+   flex-direction: column;
+   
+}
+@media (min-width: 768px) {
+    .nave-principal {
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    
 }
 .nave-principal a {
-   color: var(--blanco);
+    display: block;
+    text-align: center;
+   color: var(--blaco);
    text-decoration: none;
+   font-size: 2rem;
+   font-weight: 700;
+   padding: 1rem; 
 }
+.nave-principal a:hover{
+    background-color: var(--primario);
+    color: var(--negro);
+}
+
+@media (min-wdth: ) { 
+    
+}
+
+.hero{
+    background-image: url(../img/cuerpo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+.contenido-hero{
+    position: absolute;
+    background-color: rgba(255, 255, 255, .2);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+}  
+
+.contenido-hero h2,
+.contenido-hero p{
+    color: var(--blanco);
+}
+
+.ubica{
+    display: flex;
+  
+    align-items: flex-end;
+}
+
