@@ -18,9 +18,24 @@
   font-style: normal;
 }
 */
+
+/* GLOBALES */
+
+
 html {
     font-size: 62.5%; 
     box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+/* SCROLL */
+.servicios,
+.nave-principal,
+.formulario
+{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+
 }
 *, *:before, *:after{
     box-sizing: inherit;
@@ -204,6 +219,7 @@ span {
 }
 
 
+/* SERVICIOS */
 @media (min-width: 768px) { 
     .servicios{
         display: grid;
@@ -302,4 +318,3 @@ span {
 
 
 }
-
