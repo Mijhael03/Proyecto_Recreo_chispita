@@ -94,3 +94,30 @@ body {
     
 }
 
+
+/* CONTEINER IMAGENES NOSOTROS*/
+.cuadro{
+    display: flex;
+    width: 50%;
+}
+.conteinerNos{
+  
+    
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.image img {
+   border-radius: 30px;
+    margin: 10;
+    width: 100%;
+    height: auto;
+}
+.text {
+    background-color: #FFC107;
+    padding: 10px;
+    box-sizing: content-box;
+}
+
+
