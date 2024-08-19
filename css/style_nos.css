@@ -96,28 +96,68 @@ body {
 
 
 /* CONTEINER IMAGENES NOSOTROS*/
-.cuadro{
-    display: flex;
-    width: 50%;
-}
+/*
 .conteinerNos{
-  
-    
-    align-items: center;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    display: flex;
+   ---->  /*align-items: center;
+    display: grid;
+    grid-template-rows: 50%;
+    background-color: darkmagenta;
 }
-.image img {
+.imagen img {
    border-radius: 30px;
     margin: 10;
-    width: 100%;
-    height: auto;
+    width:50%;
+    height:auto;
 }
 .text {
-    background-color: #FFC107;
+    background-color: #FFC107;   
     padding: 10px;
     box-sizing: content-box;
+    width: 50%;
+}*/
+.seccion .container {
+    background-color: chartreuse;
+
+}
+.container {
+    display: flex;
+    align-items: flex-start; /* Alinea la imagen y el texto al principio del contenedor */
+    gap: 15px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilo para la imagen */
+.imagen {
+    width: 50%;
+}
+.imagen img {
+    width:  50vw; /* Tamaño máximo de la imagen, ajustable según necesidad */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilo para el texto */
+.texto {
+    width: 50vw; /* El texto ocupa el 50% del ancho de la ventana del navegador */
+    padding: 0 15px; /* Espacio interior para separar el texto del borde */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total del elemento */
+    line-height: 1.6; /* Ajusta la altura de las líneas para el espaciado entre ellas */
+    overflow: auto; /* Asegura que el contenido no se desborde */
+    
+    /* Otros estilos para el texto */
+    
+    line-height: 2.3;
+    background-color: chartreuse;
 }
 
 
+/* ESTILO DEL FOOTER */
+
+
+.footer {
+    background-color: darkgray;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    
+
+}

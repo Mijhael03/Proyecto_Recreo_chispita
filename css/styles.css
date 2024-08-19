@@ -131,7 +131,9 @@ span {
 }
 
 .w-sm-100{
-    width: 100%; /* esto toma el 100 cuando es mas pequeñpo la rsl de la pantalla*/
+    width: 100%;
+     /* esto toma el 100 cuando es mas pequeñpo 
+     la rsl de la pantalla*/
 }
 
 @media (min-width: 760px) { 
