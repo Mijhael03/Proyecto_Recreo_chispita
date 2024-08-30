@@ -1,0 +1,372 @@
+:root{
+    --blanco:#ffffff;
+    --negro:#212121;
+    --primario:#FFC107;
+    --secundario:#0097A7;
+    --gris:#757575;
+
+    --fuente-principal:3.8rem;
+}
+
+
+/* 
+
+.caveat-<uniquifier> {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+/* GLOBALES */
+
+
+html {
+    font-size: 62.5%; 
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+/* SCROLL */
+.servicios,
+.nave-principal,
+.formulario
+{
+    /* scroll-snap-align: center;   
+    ---------> activar mas adelante(sirv para detener el scroll*/
+    
+    scroll-snap-stop: always;
+
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body {
+    font-size: 16px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    background-image: linear-gradient(to top,rgb(211, 214, 230) 5%,var(--blanco) 80% )
+    /* sirve para darle degradado alfondo */
+
+}
+.sombra{
+    -webkit-box-shadow: inset 0px 4px 49px -13px rgba(17,81,242,0.85);
+    moz-box-shadow: inset 0px 4px 49px -13px rgba(17,81,242,0.85);
+    box-shadow: inset 0px 4px 49px -13px rgba(17,81,242,0.85);
+    /* css de la sombra del contenedor del main*/
+    background-color: var(--blanco);
+    
+
+}
+
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+h1 {
+    
+    text-align: center;
+   
+    color: var(--blanco);
+
+
+    /*font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase; */
+   
+    /* 1 rem = 10px*/
+}
+.contenido-hero p{
+    font-size: 2.8rem;
+}
+.tituloPrin{
+    text-align: center;
+    font-size: 6.8rem;
+    color: var(--blanco);
+}
+#cab{
+    background-image: url(../img/img2/cabe2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 220px;
+}
+
+span {
+    font-size: 2rem;
+}
+.contenedor{ 
+    max-width: 120rem; /* toma como maximo los 120
+     rem si es que tiene, sino toma por defecto el espacio que tenga */
+    
+    margin: 0 auto;
+    text-align: center;
+    
+  
+  
+}
+
+
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem ;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+
+}
+
+.w-sm-100{
+    width: 100%;
+     /* esto toma el 100 cuando es mas pequeñpo 
+     la rsl de la pantalla*/
+}
+
+@media (min-width: 760px) { 
+    .w-sm-100{
+        width: auto;
+    }
+}
+.flex{
+    display: flex;
+}
+.alinear-derecha{
+    justify-content: flex-end;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+.nav-bg{
+    background-color: var(--secundario);
+    
+}
+.nave-principal{
+    
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+   
+   display: flex;
+   flex-direction: column;
+   
+}
+@media (min-width: 768px) {
+    .nave-principal {
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    
+}
+.nave-principal a {
+   display: block;
+   text-align: center;
+   color: var(--blaco);
+   text-decoration: none;
+   font-size: 2rem;
+   font-weight: 700;
+   padding: 1rem; 
+}
+.nave-principal a:hover{
+    background-color: var(--primario);
+    color: var(--negro);
+}
+
+@media (min-wdth: ) { 
+    
+}
+
+.hero{
+    background-image: url(../img/cuerpo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+.contenido-hero{
+    position: absolute;
+    background-color: rgba(255, 255, 255, .2);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+}  
+
+.contenido-hero h2,
+.contenido-hero p{
+    color: var(--blanco);
+}
+
+.ubica{
+    display: flex;
+  
+    align-items: flex-end;
+}
+
+
+/* SERVICIOS */
+@media (min-width: 768px) { 
+    .servicios{
+        display: grid;
+        grid-template-columns: 33.3%  33.3%  33.3%;
+        /* otra forma es colocar  ( es para colocar los cuadros
+            grid-template-columns 1fr 1fr 1fr;
+            grid-template-columns: repeat (3, 1fr);
+        */ 
+        column-gap:1rem ; /* para dar separacion en el marge (similar al matgin o padding*/
+    }
+}
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.servicio h3{
+    color: var(--secundario);
+   /* font-weight: normal; ---> para bajar la intensidad de las letras */ 
+}
+.servicio p{
+    line-height: 2;
+    text-align: center;
+}
+.servicio .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+
+    align-items: center;
+
+}
+
+
+/***cantacto***/
+
+.formulario{
+    background-color: var(--gris);
+    width: min( 60rem, 100% );/*utiliza el mas pequeño*/
+    margin:0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primario);
+
+}
+@media (min-width: 768) { 
+    .contenedor-campos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto 20rem;
+        column-gap: 1rem;
+    }
+}
+.campo{
+    margin-bottom: 1rem;
+}
+.campo:nth-child(3){
+    grid-column: 1 / 3;
+}
+
+.campo label{
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.campo textarea{
+
+    height: 20rem;
+}
+
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+
+
+}
+
+
+/* estructura para el carrusel */
+/* styles.css */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-images img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}

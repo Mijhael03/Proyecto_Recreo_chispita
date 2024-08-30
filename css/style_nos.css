@@ -38,7 +38,9 @@ body {
     height: 220px;
 }
 
-
+span {
+    font-size: 2rem;
+}   
 
 
 

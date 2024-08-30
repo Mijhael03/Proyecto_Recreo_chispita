@@ -16,6 +16,7 @@ function nextSlide() {
     showSlide(index);
 }
 
+
 function prevSlide() {
     index--;
     showSlide(index);
