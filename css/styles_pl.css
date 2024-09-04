@@ -324,6 +324,11 @@ span {
 }
 
 
+
+
+
+
+
 /* estructura para el carrusel */
 /* styles.css */
 
@@ -359,8 +364,9 @@ button {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 10px;
+    padding: 20px;
     cursor: pointer;
+    cursor: move; /* modificar - averiguar */ 
 }
 
 .prev {
@@ -369,4 +375,20 @@ button {
 
 .next {
     right: 0;
+}
+
+.top-descp{
+    background-color: aquamarine;
+
+
+}
+.descp{
+    background-color: #FFC107;
+    margin-top: 80px;
+    padding: 20px;
+}
+.descp p {
+    text-align: center;
+    text-transform: capitalize;
+
 }
