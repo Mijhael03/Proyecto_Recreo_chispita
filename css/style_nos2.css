@@ -105,21 +105,6 @@ body {
 }
 
 
-@media (min-width: 768px) {
-    .container img {
-        flex-direction: row;
-        justify-content:space-between;
-        width: auto;
-        height: auto;
-    }
-    .container > div {
-        border-radius: 5px;
-        padding: 10px;
-        background-color: rgb(237, 186, 186);
-        border: 2px solid rgb(226, 183, 114);
-      }
-    
-}
 
 /*-------*/
 
@@ -152,8 +137,10 @@ body {
 }
 
 .letr{
-    text-align: center;
-    font-size: medium;
+    text-align: justify;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    overflow: auto;
+    line-height: 3.6;
 }
 
 /* INCIO FOOTER */ 
@@ -170,3 +157,35 @@ body {
 
 /* FIN FOOTER*/
 
+
+
+
+
+/*
+
+=== COLOCAR EN CUERPO (FALTA TERMINAR) =======
+
+
+
+@media (min-width: 768px) {
+    .container img {
+        flex-direction: row;
+        justify-content:space-between;
+        width: auto;
+        height: auto;
+    }
+    .container{
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgb(237, 186, 186);
+        border: 2px solid rgb(141, 74, 7);
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 5fr));
+        grid-auto-rows: minmax(400px, auto);
+        grid-gap: 20px;
+        justify-self: center;
+      }
+    
+}*/
