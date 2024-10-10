@@ -103,6 +103,18 @@ body {
 .myimg{
 
 }
+
+
+@media (min-width: 768px) {
+    .container img {
+        flex-direction: row;
+        justify-content:space-between;
+        width: auto;
+        height: auto;
+    }
+    
+}
+
 /*-------*/
 
 .container > div {
@@ -124,10 +136,9 @@ body {
 
 
 .container img{
-    width: 700px;
+    width: auto;
     height: 380px;
-    
-    
+   
 }
 
 .myimg img {
