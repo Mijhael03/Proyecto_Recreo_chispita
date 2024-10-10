@@ -92,9 +92,7 @@ span {
     color: var(--negro);
 }
 
-@media (min-wdth: ) { 
-    
-}
+
 
 
 /* CONTEINER IMAGENES NOSOTROS*/
@@ -118,13 +116,30 @@ span {
     box-sizing: content-box;
     width: 50%;
 }*/
-.seccion .container {
-    background-color: burlywood ;
 
+
+
+
+/* .seccion .container {
+    background-color: rgb(222, 216, 209) ;
+
+} */
+
+.seccion{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 20px;
+
+}
+
+.myimg img {
+    width: 40vw;
 }
 .container {
     display: flex;
-    align-items: flex-start; /* Alinea la imagen y el texto al principio del contenedor */
+   /* align-items: flex-start;  Alinea la imagen y el texto al principio del contenedor */
+    align-items: normal;
     gap: 15px; /* Espacio entre la imagen y el texto */
 }
 
@@ -140,6 +155,7 @@ span {
 
 /* Estilo para el texto */
 .texto {
+    display: grid;
     width: 50vw; /* El texto ocupa el 50% del ancho de la ventana del navegador */
     padding: 0 15px; /* Espacio interior para separar el texto del borde */
     box-sizing: border-box; /* Incluye padding y border en el ancho total del elemento */
@@ -149,7 +165,8 @@ span {
     /* Otros estilos para el texto */
     
     line-height: 2.3;
-    background-color: chartreuse;
+    /*background-color: rgb(255, 255, 255);*/
+    grid-column: 1 / -1; /* Ocupa todas las columnas */
 }
 
 /* CONTEINER 2*/
@@ -158,23 +175,25 @@ span {
     flex-direction: row-reverse;
     align-items:flex-start; /* Alinea la imagen y el texto al principio del contenedor */
     justify-content: space-around;
+    align-items: normal;
     gap: 15px; /* Espacio entre la imagen y el texto */
 }
 
 /* CONTEINER 3  (PROCESO)*/
-
 .container3 {
+    /*display: flex;
+    align-items: flex-start;  Alinea la imagen y el texto al principio del contenedor */
+    align-items: normal;
+    gap: 15px; /* Espacio entre la imagen y el texto
+    */
     display: flex;
-    align-items: flex-start; /* Alinea la imagen y el texto al principio del contenedor */
+    flex-direction:row;
+    align-items:flex-start; /* Alinea la imagen y el texto al principio del contenedor */
+    justify-content: space-around;
+    align-items: normal;
     gap: 15px; /* Espacio entre la imagen y el texto */
-}
-.imagen {
-    width: 50%;
-}
-.imagen img {
-    width:  50vw; /* Tamaño máximo de la imagen, ajustable según necesidad */
-    height: 500px; /* Mantiene la proporción de la imagen */
-    border-radius: 80px;
+
+
 }
 
 
