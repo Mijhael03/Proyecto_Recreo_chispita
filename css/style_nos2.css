@@ -98,13 +98,13 @@ body {
 
 
 
-
-
+/*
+ EN PROCEOSO 
 .myimg{
 
 }
 
-
+*/
 
 /*-------*/
 
@@ -132,8 +132,12 @@ body {
    
 }
 
-.myimg img {
+#myimg{
+    max-width: 100%;
    
+}
+.img{
+    max-width: 100%;
 }
 
 .letr{
