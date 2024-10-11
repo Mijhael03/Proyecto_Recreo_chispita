@@ -1,0 +1,90 @@
+
+
+
+:root{
+    --blanco:#ffffff;
+    --negro:#212121;
+    --primario:#FFC107;
+    --secundario:#0097A7;
+    --gris:#757575;
+
+    --fuente-principal:3.8rem;
+}
+
+html {
+    font-size: 62.5%; 
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body {
+    font-size: 16px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+   /*  background-image: linear-gradient(to var(--gris) 5%,var(--blanco) 80% )
+    sirve para darle degradado alfondo */
+
+}
+
+
+
+/*  CABECERA */
+
+
+#cab{
+    background-image: url(../img/img2/cabe2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 220px;
+
+}
+
+/* FIN CABECERA */
+
+
+/* BARRA DE NAVEGADOR */ 
+
+.nav-bg{
+
+    background-color: var(--secundario);
+}
+
+.nave-principal{
+    
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+   
+   display: flex;
+   flex-direction: column;
+   
+}
+.nave-principal a {
+    display: block;
+    text-align: center;
+    color: var(--blaco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem; 
+ }
+ .nave-principal a:hover{
+     background-color: var(--primario);
+     color: var(--negro);
+ }
+
+
+ @media (min-width: 768px) {
+    .nave-principal {
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    
+}
