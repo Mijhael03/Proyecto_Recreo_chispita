@@ -146,6 +146,21 @@ h1 {
 }
 
 
+/*  SEPARACION */
+
+.sep{
+    width: fit-content;
+    height: 30px;
+    background-color: rgb(191, 162, 219);
+    
+    text-align: center;
+    margin: 20px 0;
+
+    
+   
+
+}
+
 
 
  /* CSS TABLA */
