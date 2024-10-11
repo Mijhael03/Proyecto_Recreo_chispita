@@ -225,3 +225,19 @@ tfoot td {
   );
   border: 3px solid purple;
 }
+
+
+
+/* INCIO FOOTER */ 
+.footer{
+
+
+    background-color: darkgray;
+    height: 80px;
+    text-align: center;
+    display: flex;
+
+}
+
+
+/* FIN FOOTER*/
