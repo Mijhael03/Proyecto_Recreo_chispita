@@ -185,6 +185,8 @@ span {
 .nave-principal a:hover{
     background-color: var(--primario);
     color: var(--negro);
+    transition: all 0.3s;
+    
 }
 
 @media (min-wdth: ) { 
@@ -269,6 +271,7 @@ span {
     margin:0 auto;
     padding: 2rem;
     border-radius: 1rem;
+    
 
 }
 
@@ -351,15 +354,20 @@ body {
 }
 
 button {
-   /* position: absolute;*/
-    top: 50%;
-    transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
+    
 }
+button:hover{
+    background-color: #FFC107;
+    transition: all 0.5s;
+    color: #212121;
+}
+
+
 
 .prev {
     left: 0;
@@ -367,4 +375,11 @@ button {
 
 .next {
     right: 0;
+}
+
+
+section{
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.9);
 }
